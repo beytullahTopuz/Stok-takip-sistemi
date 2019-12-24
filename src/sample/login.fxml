@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" opacity="0.97" prefHeight="400.0" prefWidth="600.0" styleClass="stil.css">
+      <children>
+        <TextField fx:id="email" layoutX="200.0" layoutY="148.0" prefWidth="200.0" promptText="email or username" text="" />
+        <PasswordField fx:id="sifre" layoutX="200.0" layoutY="208.0" prefWidth="200.0" promptText="parola" />
+        <Button fx:id="button" layoutX="200.0" layoutY="285.0" minHeight="21.960915429684974" mnemonicParsing="false" onAction="#girisyap" prefHeight="21.960915429684974" prefWidth="75.5" text="Giriş Yap" textAlignment="CENTER" textFill="WHITE">
+          <font>
+            <Font name="System Bold" size="12.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Text fill="#8f00ff" fontSmoothingType="LCD" layoutX="271.0" layoutY="84.0" scaleX="1.8426103167709946" scaleY="2.4908098271155596" strokeType="OUTSIDE" strokeWidth="0.0" text="GİRİŞ YAP" textAlignment="CENTER">
+          <font>
+            <Font name="Arial" size="14.0" />
+          </font>
+        </Text>
+        <Button fx:id="btnKayit" font="$x1" layoutX="306.0" layoutY="284.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="73.0" text="Kayıt Ol" textFill="WHITE">
+          <stylesheets>
+            <URL value="@stil.css" />
+          </stylesheets>
+        </Button>
+      </children>
+      <stylesheets>
+        <URL value="@stil.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+</AnchorPane>

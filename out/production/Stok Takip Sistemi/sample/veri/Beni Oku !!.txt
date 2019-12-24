@@ -1,0 +1,13 @@
+Dosyalardaki veriler aşağıdaki şekilde sıralıdır.
++ Calısan: isim;soyisim;şifre;tc;telefon;email;adres;çalışan_no;maaş
++ Musteri: isim;soyisim;şifre;tc;telefon;email;adres;müşteri_no;ödeme şekli
++ Siparis: sipariş_no; barkod_no; ürün_adeti; bu_ürünün_toplam_fiyatı; müşteri_no; onaylayan_personel_no
++ Siparis_istegi: sipariş_no; barkod_no; ürün_adeti; bu_ürünün_toplam_fiyatı; müşteri_no
++ Tedarikci: isim;tedarikçi_id;teslimat_süresi
++Urun: barkod_no;isim;fiyat;stok_adeti;tedarikçi_id
++Urun_talebi: barkod_no;adet;tedarikçi_id
++ Yetkili: isim;soyisim;şifre;tc;telefon;email;adres;çalışan_no;maaş
+
+
+önemli not sipariş ve sipariş istekleri aynı anda satın alınan her farklı ürün için 
+aynı sipariş numarasına sahip farklı bir satır oluşturmaktadır.

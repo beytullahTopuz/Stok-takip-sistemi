@@ -1,0 +1,11 @@
+#root{
+    -fx-background-color: grey;
+}
+#btnKayit{
+    -fx-background-color: blue;
+}
+#ad{
+    -fx-font-size: 12px;
+    -fx-font-family: Cambria;
+    -fx-color: blue;
+}

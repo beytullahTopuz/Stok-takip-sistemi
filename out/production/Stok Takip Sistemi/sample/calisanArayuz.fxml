@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="608.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Sipariş Onay">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView id="" fx:id="onayBekleyenSiparisler" layoutX="0.0" layoutY="21.0" prefHeight="348.0" prefWidth="300.0" />
+                <ListView id="" fx:id="onaylanmisSiparisler" layoutX="300.0" layoutY="21.0" prefHeight="360.0" prefWidth="308.0" />
+                <Label layoutX="74.0" layoutY="6.0" text="ONAY BEKLEYEN SİPARİŞLER" textFill="#ff007a" />
+                <Label layoutX="385.0" layoutY="5.0" text="ONAYLANMIŞ SİPARİŞLER" textFill="#00cc52" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Stok miktarı">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TableView layoutX="-4.0" layoutY="0.0" prefHeight="369.0" prefWidth="612.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="122.0" text="Barkod No" fx:id="yetkiliUrunBarkodNo" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="98.0" text="Tedarikçi ID" fx:id="yetkiliUrunTedarikciId" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Ürün Adı" fx:id="yetkiliUrunUrunAdi" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" text="Fiyat" fx:id="yetkiliUrunFiyat" />
+                    <TableColumn maxWidth="5000.0" minWidth="0.0" prefWidth="99.0" text="Stok (Adet)" fx:id="yetkiliUrunStok" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" text="Ürün Talep" fx:id="urunTalep" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

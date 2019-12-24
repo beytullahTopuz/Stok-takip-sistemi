@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.YetkiliController" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab id="yetkiliHesapOlusturma" fx:id="Yetkili_CalisanHesapOlusturma" text="Hesap Oluştur">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField fx:id="ad" layoutX="200.0" layoutY="91.0" prefWidth="200.0">
+
+                </TextField>
+                <Text layoutX="166.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AD :" />
+                <Text layoutX="144.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOYAD :" />
+                <TextField fx:id="soyad" layoutX="200.0" layoutY="115.0" prefWidth="200.0" />
+                <TextField fx:id="sifre1" layoutX="200.0" layoutY="140.0" prefWidth="200.0" />
+                <Text layoutX="153.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE :" />
+                <TextField fx:id="sifre2" layoutX="200.0" layoutY="165.0" prefWidth="200.0" />
+                <Text layoutX="105.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE(TEKRAR) :" />
+                <Text layoutX="168.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TC :" />
+                <TextField fx:id="tcNo" layoutX="200.0" layoutY="189.0" prefWidth="200.0" />
+                <TextField fx:id="telNo" layoutX="200.0" layoutY="214.0" prefWidth="200.0" />
+                <Text layoutX="134.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON :" />
+                <Text layoutX="143.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-MAİL :" />
+                <TextField fx:id="eMail" layoutX="200.0" layoutY="238.0" prefWidth="200.0" />
+                <Text layoutX="147.0" layoutY="279.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRES :" />
+                <TextField id="Adres" fx:id="adres" layoutX="200.0" layoutY="263.0" prefWidth="200.0" />
+                <TextField id="calisanNo" fx:id="calisann" layoutX="200.0" layoutY="288.0" prefWidth="200.0" />
+                <Text id="" fx:id="calisanNo" layoutX="129.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Çalışan No:" />
+                <Text fill="#0029ff" layoutX="215.0" layoutY="42.0" scaleX="1.1777719242722628" scaleY="1.6719938235861802" strokeType="OUTSIDE" strokeWidth="0.0" text="ÇALIŞAN KAYIT">
+                  <font>
+                    <Font name="Arial Bold" size="22.0" fx:id="x1" />
+                  </font>
+                </Text>
+                <Button id="btnKayitOlustur" fx:id="btnCalisanKayitOlustur" onAction="#calisankayit" layoutX="344.0" layoutY="310.0" mnemonicParsing="false" text="Kaydet" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab id="Ürün kontrol" fx:id="yetkiliUrunKaydi" text="Ürün Kaydı">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <VBox layoutX="0.0" layoutY="169.0" prefHeight="200.0" prefWidth="100.0" />
+                <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="600.0">
+                  <children>
+                    <TextField id="ad" fx:id="b1" layoutX="200.0" layoutY="91.0" prefWidth="200.0">
+
+                    </TextField>
+                    <Text fx:id="barkodId" layoutX="91.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod Numarası :" />
+                    <Text layoutX="138.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün Adı:" />
+                    <TextField id="soyad" fx:id="b2" layoutX="200.0" layoutY="115.0" prefWidth="200.0" />
+                    <TextField id="sifre1" fx:id="b3" layoutX="200.0" layoutY="140.0" prefWidth="200.0" />
+                    <Text fx:id="fiyat" layoutX="161.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiyat:" />
+                    <TextField id="sifre2" fx:id="b4" layoutX="200.0" layoutY="165.0" prefWidth="200.0" />
+                    <Text layoutX="128.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stok adedi:" />
+                    <Text layoutX="123.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tedarikçi Id:" />
+                    <TextField id="tcNo" fx:id="b5" layoutX="200.0" layoutY="189.0" prefWidth="200.0" />
+                    <Text fill="#ff66f9" font="$x1" layoutX="232.0" layoutY="42.0" scaleX="1.1777719242722628" scaleY="1.6719938235861802" strokeType="OUTSIDE" strokeWidth="0.0" text="ÜRÜN KAYIT" />
+                    <Button fx:id="btnYetkiliUrunKayit" onAction="#urunkayit" layoutX="344.0" layoutY="211.0" mnemonicParsing="false" text="Kaydet" />
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab id="Ürün kontrol" fx:id="yetkiliUrunTakip" text="Ürün">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField fx:id="a10" layoutX="133.0" layoutY="139.0" prefWidth="74.0" />
+                <TextField fx:id="a30" layoutX="133.0" layoutY="227.0" prefWidth="74.0" />
+                <TextField fx:id="a20" layoutX="133.0" layoutY="185.0" prefWidth="74.0" />
+                <TextField id="a1" fx:id="a00" layoutX="133.0" layoutY="94.0" prefWidth="74.0" />
+                <TextField fx:id="a40" layoutX="133.0" layoutY="270.0" prefWidth="74.0" />
+                <Text layoutX="75.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 1" />
+                <Text layoutX="75.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 2" />
+                <Text layoutX="75.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 3" />
+                <Text layoutX="75.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 6" />
+                <Text layoutX="74.0" layoutY="242.0" scaleX="0.999994485618493" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 4" />
+                <Text layoutX="75.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 5" />
+                <TextField fx:id="a50" layoutX="133.0" layoutY="313.0" prefWidth="74.0" />
+                <TextField id="a12" fx:id="a01" layoutX="232.0" layoutY="94.0" prefWidth="74.0" />
+                <TextField id="a12" fx:id="a02" layoutX="336.0" layoutY="94.0" prefWidth="74.0" />
+                <TextField fx:id="a11" layoutX="232.0" layoutY="138.0" prefWidth="74.0" />
+                <TextField fx:id="a41" layoutX="232.0" layoutY="269.0" prefWidth="74.0" />
+                <TextField fx:id="a31" layoutX="232.0" layoutY="226.0" prefWidth="74.0" />
+                <TextField fx:id="a51" layoutX="232.0" layoutY="316.0" prefWidth="74.0" />
+                <TextField fx:id="a21" layoutX="232.0" layoutY="182.0" prefWidth="74.0" />
+                <TextField fx:id="a12" layoutX="336.0" layoutY="138.0" prefWidth="74.0" />
+                <TextField fx:id="a22" layoutX="336.0" layoutY="182.0" prefWidth="74.0" />
+                <TextField fx:id="a32" layoutX="336.0" layoutY="226.0" prefWidth="74.0" />
+                <TextField fx:id="a42" layoutX="336.0" layoutY="269.0" prefWidth="74.0" />
+                <TextField fx:id="a52" layoutX="336.0" layoutY="316.0" prefWidth="74.0" />
+                <Text layoutX="259.0" layoutY="36.0" scaleX="2.974093739898129" scaleY="2.1904062652961334" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün Stok Güncelleme" />
+                <Button fx:id="urun1stokguncelle" onAction="#stok1update" layoutX="418.0" layoutY="97.0" mnemonicParsing="false" text="Stok Güncelle" />
+                <Button fx:id="urun2stokguncelle" onAction="#stok2update" layoutX="418.0" layoutY="139.0" mnemonicParsing="false" text="Stok Güncelle" />
+                <Button fx:id="urun3stokguncelle" onAction="#stok3update" layoutX="418.0" layoutY="186.0" mnemonicParsing="false" text="Stok Güncelle" />
+                <Button fx:id="urun4stokguncelle" onAction="#stok4update" layoutX="418.0" layoutY="227.0" mnemonicParsing="false" text="Stok Güncelle" />
+                <Button fx:id="urun5stokguncelle" layoutX="418.0" layoutY="270.0" mnemonicParsing="false" text="Stok Güncelle" />
+                <Button fx:id="urun6stokguncelle" layoutX="418.0" layoutY="316.0" mnemonicParsing="false" text="Stok Güncelle" />
+                <TextField id="a10" fx:id="stokekleme2" layoutX="522.0" layoutY="139.0" prefWidth="74.0" />
+                <TextField id="a30" fx:id="stokekleme4" layoutX="522.0" layoutY="227.0" prefWidth="74.0" />
+                <TextField id="a20" fx:id="stokekleme3" layoutX="522.0" layoutY="185.0" prefWidth="74.0" />
+                <TextField id="a1" fx:id="stokekleme1" layoutX="522.0" layoutY="94.0" prefWidth="74.0" />
+                <TextField id="a40" fx:id="stokekleme5" layoutX="522.0" layoutY="270.0" prefWidth="74.0" />
+                <TextField id="a50" fx:id="stokekleme6" layoutX="522.0" layoutY="313.0" prefWidth="74.0" />
+                <Text layoutX="142.0" layoutY="84.0" scaleX="1.0" scaleY="1.000006265295975" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod no" />
+                <Text layoutX="244.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün ismi" />
+                <Text layoutX="349.0" layoutY="84.0" scaleX="1.000005514381507" scaleY="1.000006265295975" strokeType="OUTSIDE" strokeWidth="0.0" text="stok adet" />
+                <Text layoutX="510.0" layoutY="84.0" scaleX="1.0" scaleY="1.000006265295975" strokeType="OUTSIDE" strokeWidth="0.0" text="Eklenecek deger" />
+                <Button id="urun1stokguncelle" fx:id="btnstokgörüntüleme" onAction="#btngoruntuleme" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" text="Stokları Görüntülemek İçin Tıklayın" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Yeni tedaikçi kaydı">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField id="ad" fx:id="tedarikciisim" layoutX="274.0" layoutY="166.0" prefWidth="200.0">
+
+                </TextField>
+                <Text id="barkodId" layoutX="165.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tedarikçi ismi :" />
+                <Text layoutX="177.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tedarikçi id :" />
+                <TextField id="soyad" fx:id="tedarikciid" layoutX="274.0" layoutY="184.0" prefWidth="200.0" />
+                <TextField id="sifre1" fx:id="teslimatsuresi" layoutX="274.0" layoutY="216.0" prefWidth="200.0" />
+                <Text id="fiyat" layoutX="162.0" layoutY="232.0" scaleX="0.9131501854539472" scaleY="1.223967976739712" strokeType="OUTSIDE" strokeWidth="0.0" text="Teslimat Süresi :" />
+                <Text fill="#52ff00" font="$x1" layoutX="218.0" layoutY="88.0" scaleX="1.1777719242722628" scaleY="1.6719938235861802" strokeType="OUTSIDE" strokeWidth="0.0" text="Tedarikçi Kaydı" />
+                <Button id="btnYetkiliUrunKayit" fx:id="btntedarikcikaydet" onAction="#tedarilcikayit" layoutX="417.0" layoutY="237.0" mnemonicParsing="false" text="Kaydet" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

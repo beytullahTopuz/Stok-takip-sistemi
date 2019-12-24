@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="578.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+    <children>
+        <Accordion expandedPane="$null" layoutX="-49.0" layoutY="-23.0" />
+        <TextField fx:id="ad" layoutX="240.0" layoutY="110.0" prefWidth="200.0" />
+        <Text fill="#0029ff" fontSmoothingType="LCD" layoutX="277.0" layoutY="65.0" scaleX="3.5411463336535385" scaleY="3.19285364659814" strokeType="OUTSIDE" strokeWidth="0.0" text="KAYIT OL" textAlignment="CENTER">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="206.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AD :" />
+        <Text layoutX="184.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOYAD :" />
+        <TextField fx:id="soyad" layoutX="240.0" layoutY="132.0" prefWidth="200.0" />
+        <TextField fx:id="sifre1" layoutX="240.0" layoutY="154.0" prefWidth="200.0" />
+        <Text layoutX="193.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE :" />
+        <TextField fx:id="sifre2" layoutX="240.0" layoutY="176.0" prefWidth="200.0" />
+        <Text layoutX="145.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ŞİFRE(TEKRAR) :" />
+        <Text layoutX="208.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TC :" />
+        <TextField fx:id="tcNo" layoutX="240.0" layoutY="198.0" prefWidth="200.0" />
+        <TextField fx:id="telNo" layoutX="240.0" layoutY="220.0" prefWidth="200.0" />
+        <Text layoutX="174.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TELEFON :" />
+        <Text layoutX="184.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-MAİL :" />
+        <TextField fx:id="eMail" layoutX="240.0" layoutY="242.0" prefWidth="200.0" />
+        <Text layoutX="186.0" layoutY="280.0" scaleX="1.0" scaleY="0.9999923519334313" strokeType="OUTSIDE" strokeWidth="0.0" text="ADRES :" />
+        <TextField id="Adres" fx:id="adres" layoutX="240.0" layoutY="264.0" prefWidth="200.0" />
+        <Button fx:id="btnkayitol" layoutX="240.0" layoutY="322.0" mnemonicParsing="false" onAction="#kayit" text="KAYIT OL" />
+    </children>
+</AnchorPane>

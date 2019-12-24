@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.musteriarayuzkontroller" xmlns="http://javafx.com/javafx/2.2">
+    <children>
+        <TabPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="urunArayuzAra" text="Ürün Ara">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="aramatext" layoutX="313.0" layoutY="30.0" prefWidth="200.0" text="" />
+                                <Text layoutX="283.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ara :" />
+                                <Button fx:id="btnAra" onAction="#search" layoutX="513.0" layoutY="31.0" mnemonicParsing="false" text="Ara" />
+                                <TextField fx:id="uruntxt2" layoutX="83.0" layoutY="143.0" prefWidth="200.0" />
+                                <TextField fx:id="uruntxt4" layoutX="83.0" layoutY="231.0" prefWidth="200.0" />
+                                <TextField fx:id="uruntxt3" layoutX="83.0" layoutY="187.0" prefWidth="200.0" />
+                                <TextField fx:id="uruntxt1" layoutX="83.0" layoutY="99.0" prefWidth="200.0" />
+                                <TextField fx:id="uruntxt5" layoutX="83.0" layoutY="274.0" prefWidth="200.0" />
+                                <Text layoutX="32.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 1" />
+                                <Text layoutX="32.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 2" />
+                                <Text layoutX="32.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 3" />
+                                <Text layoutX="32.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 6" />
+                                <Text layoutX="31.0" layoutY="247.0" scaleX="0.999994485618493" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 4" />
+                                <Text layoutX="32.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 5" />
+                                <TextField fx:id="uruntxt6" layoutX="83.0" layoutY="318.0" prefWidth="200.0" />
+                                <Button id="siparisistegiolustur" fx:id="sepetekle1" onAction="#sepet1" layoutX="307.0" layoutY="99.0" mnemonicParsing="false" text="Sipariş İsteği Oluştur" />
+                                <Button id="siparisistegiolustur1" fx:id="sepetekle2" onAction="#sepet2" layoutX="307.0" layoutY="143.0" mnemonicParsing="false" text="Sipariş İsteği Oluştur" />
+                                <Button id="siparisistegiolustur3" fx:id="sepetekle3" onAction="#sepet3" layoutX="307.0" layoutY="187.0" mnemonicParsing="false" text="Sipariş İsteği Oluştur" />
+                                <Button id="siparisistegiolustur4" fx:id="sepetekle4" onAction="#sepet4" layoutX="307.0" layoutY="234.0" mnemonicParsing="false" text="Sipariş İsteği Oluştur" />
+                                <Button id="siparisistegiolustur5" fx:id="sepetekle5" layoutX="307.0" layoutY="274.0" mnemonicParsing="false" text="Sipariş İsteği Oluştur" />
+                                <Button id="siparisistegiolustur6" fx:id="sepetekle6" layoutX="307.0" layoutY="318.0" mnemonicParsing="false" text="Sipariş İsteği Oluştur" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="musteriArayuzSepet" text="Sepet">
+                    <content>
+                        <AnchorPane id="Content" fx:id="m00" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="c10" layoutX="109.0" layoutY="143.0" prefWidth="74.0" />
+                                <TextField fx:id="c30" layoutX="109.0" layoutY="231.0" prefWidth="74.0" />
+                                <TextField fx:id="c20" layoutX="109.0" layoutY="187.0" prefWidth="74.0" />
+                                <TextField fx:id="c00" layoutX="109.0" layoutY="99.0" prefWidth="74.0" />
+                                <TextField id="c4" fx:id="c40" layoutX="109.0" layoutY="274.0" prefWidth="74.0" />
+                                <Text layoutX="32.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 1" />
+                                <Text layoutX="32.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 2" />
+                                <Text layoutX="32.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 3" />
+                                <Text layoutX="32.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 6" />
+                                <Text layoutX="31.0" layoutY="247.0" scaleX="0.999994485618493" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 4" />
+                                <Text layoutX="32.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün 5" />
+                                <TextField fx:id="c50" layoutX="109.0" layoutY="318.0" prefWidth="74.0" />
+                                <TextField fx:id="c01" layoutX="263.0" layoutY="99.0" prefWidth="74.0" />
+                                <TextField id="c11" fx:id="c02" layoutX="409.0" layoutY="99.0" prefWidth="74.0" />
+                                <TextField fx:id="c11" layoutX="263.0" layoutY="143.0" prefWidth="74.0" />
+                                <TextField fx:id="c41" layoutX="263.0" layoutY="274.0" prefWidth="74.0" />
+                                <TextField fx:id="c31" layoutX="263.0" layoutY="231.0" prefWidth="74.0" />
+                                <TextField fx:id="c51" layoutX="263.0" layoutY="318.0" prefWidth="74.0" />
+                                <TextField fx:id="c21" layoutX="263.0" layoutY="187.0" prefWidth="74.0" />
+                                <TextField fx:id="c12" layoutX="409.0" layoutY="143.0" prefWidth="74.0" />
+                                <TextField fx:id="c22" layoutX="409.0" layoutY="187.0" prefWidth="74.0" />
+                                <TextField fx:id="c32" layoutX="409.0" layoutY="231.0" prefWidth="74.0" />
+                                <TextField fx:id="c42" layoutX="409.0" layoutY="274.0" prefWidth="74.0" />
+                                <TextField fx:id="c52" layoutX="409.0" layoutY="318.0" prefWidth="74.0" />
+                                <Text layoutX="284.0" layoutY="54.0" scaleX="2.974093739898129" scaleY="2.1904062652961334" strokeType="OUTSIDE" strokeWidth="0.0" text="SEPET" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
